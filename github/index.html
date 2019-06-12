@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <link rel="Stylesheet" type="text/css" href="css/reset.css">
+    <link rel="Stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="Stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+      <header class="header">
+          <nav>
+            <ul>
+              <li><a id="blackHeading" href="#">H2 ZWART</a></li>
+              <li><a id="comicSans" href="#">COMIC SANS</a></li>
+              <li><a id="beep" href="#">BEEP</a></li>
+            </ul>
+          </nav>
+        </header>
+    <main>
+        <div id="accordion">
+            <h3>First header</h3>
+            <div class="accordion-content">First content panel</div>
+            <h3>Second header</h3>
+            <div class="accordion-content">Second content panel</div>
+          </div>
+      <article>
+        <header>
+          <h2>Lorem ipsum dolor sit amizzle, consectetizzle</h2>
+          <p>
+              Lorem ipsum dolor sit amizzle, consectetizzle uhuh ... yih! elizzle. 
+              Da bomb sapizzle velit, pizzle da bomb, da bomb i saw beyonces tizzles 
+              and my pizzle went crizzle, izzle vizzle, arcu. Pellentesque yippiyo 
+              away. Sizzle erizzle. Fusce izzle dolor dapibizzle bow wow wow tempizzle 
+              ghetto. Mauris sizzle nibh shiznit turpizzle. Fizzle in tortor. 
+              Pellentesque own yo' gangster boofron. In shut the shizzle up hizzle 
+              platea dictumst. 
+          </p>
+        </header>
+        <p>
+          My money's in that office, right? If she start giving me some <span>bullshit</span> about it ain't there, 
+          and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. 
+          Then I'm gonna shoot that <span id="myspan">bitch</span> in the kneecaps, find out where my <span id="myspan">goddamn</span> money is. She gonna 
+          tell me too. Hey, look at me when I'm talking to you, <span id="myspan">motherfucker</span>.
+        </p>
+        <footer>
+          <p>
+              Lorem ipsum dolor sit amizzle, consectetizzle uhuh ... yih! elizzle. 
+              Da bomb sapizzle velit, pizzle da bomb, da bomb i saw beyonces tizzles 
+              and my pizzle went crizzle, izzle vizzle, arcu. Pellentesque yippiyo 
+              away. Sizzle erizzle. Fusce izzle dolor dapibizzle bow wow wow tempizzle 
+              ghetto. Mauris sizzle nibh shiznit turpizzle. Fizzle in tortor. 
+              Pellentesque own yo' gangster boofron. In shut the shizzle up hizzle 
+              platea dictumst. 
+          </p>
+        </footer>
+      </article>
+      <div class="kitten"><img src="img/demon-kitten.jpg"></div>
+      <div class="kitten"></div>
+    </main>
+  
+    
+      <script src="js/p5.js"></script>
+      <script src="js/jquery-3.4.1.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/sketch.js"></script>
+      <script>
+        var fontColor = '#000';
+         
+        $( document ).ready(function() {
+            //console.log('hello MAMDT');
+             $('#blackHeading').click(function(){
+                $('h2').css({'color':fontColor});
+            });	
+  
+            $('#comicSans').click(function(){
+              $('body').css({'font-family':'Comic Sans MS'});
+            });
+  
+            $('#beep').click(function(){
+              $('span').textContent="beep";
+            });
+        });
+  
+        $("#accordion").accordion({
+          heightStyle: "content"
+  
+        });
+  
+        $("#accordion").accordion({
+          collapsible: true,
+          active: false
+        });
+        
+    
+   
+      
+  
+  
+        </script>
+    
+  </body>
+</html>
